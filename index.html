@@ -12,13 +12,105 @@
   </head>
   <body>
     <!-- navbar -->
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a>
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Flowbite</span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get started
+          </button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+
+    
+
+
     <div class="block py-[6px]">
       <div class="container-flude">
-        <div class="flex flex-row justify-between gap-5">
+        <div class="flex flex-row justify-between gap-2">
           <div class="flex">
             <h1 class="text-lg block p-[5px] font-medium">LOGO</h1>
           </div>
-          <ul class="flex list-none m-0 p-0 overflow-hidden gap-20">
+          <div class="p-8px flex justify-between gap-10">
+          <ul class="flex list-none m-0 p-0 overflow-hidden gap-2 sm:gap-20">
             <li class="flex">
               <a
                 class="block text-lg p-[5px] font-medium focus:bg-sky-300"
@@ -50,16 +142,18 @@
                 >Blocks</a
               >
             </li>
-            <div class="p-8px">
-              <a href="#ablock"
-                ><h1
-                  class="buyback py-[3px] px-[20px] rounded text-lg hover:bg-sky-300"
-                >
-                  Buy Now
-                </h1></a
-              >
-            </div>
+            
           </ul>
+         <div>
+            <a href="#ablock"
+              ><h1
+                class="bg-[#1dc9cb] py-[3px] px-[20px] rounded text-lg hover:bg-sky-300"
+              >
+                Buy Now
+              </h1></a
+            >
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -74,12 +168,18 @@
           <div
             class="banrtext flex flex-col text-center justify-center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
           >
-            <h1 class="text-[60px] font-[700]">Travel With Us</h1>
-            <h3 class="travel text-white text-[30px]">
+            <h1
+              class="text-black text-[40px] md:text-[60px] font-[700] mt-[40px]"
+            >
+              Travel With Us
+            </h1>
+            <h3 class="text-black md:text-white text-[20px] md:text-[30px]">
               Explore the world in any direction
             </h3>
 
-            <div class="flex text-center justify-center gap-5 mt-[40px]">
+            <div
+              class="flex flex-col md:flex-row text-center justify-center gap-5 mt-[40px]"
+            >
               <div class="w-full block">
                 <a href="#ablock"
                   ><h6 class="bg-white py-[3px] px-[20px] text-[20px] rounded">
@@ -106,15 +206,15 @@
     <div class="block flex flex-col mt-[50px]">
       <div class="lg:container mx-auto">
         <div class="flex flex-col">
-          <h1 class="text-[30px]">Our Journal</h1>
-          <h3 class="text-[20px]">
+          <h1 class="text-[30px] text-center md:text-left">Our Journal</h1>
+          <h3 class="text-[20px] text-center md:text-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex itaque
-            laboriosam quam,<br />
-            consequuntur vero officiis molestias, inventore repellendus.
+            laboriosam quam, consequuntur vero officiis molestias, inventore
+            repellendus.
           </h3>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 border-2 mt-[20px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-2 mt-[20px]">
           <div class="flex flex-col p-[80px]">
             <h2>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -172,21 +272,23 @@
         />
       </div>
       <div
-        class="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+        class="absolute top-[30%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 md:top-[50%] md:left-[50%] md:transform -translate-x-1/2 -translate-y-1/2"
       >
-        <h1 class="text-[40px] font-[700]">Do You Wanna Go ?</h1>
+        <h1 class="text-[20px] sm:text-[40px] font-[700]">Do You Wanna Go ?</h1>
       </div>
       <div
-        class="flex absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+        class="flex absolute justify-center top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 sm:top-[60%] sm:left-[50%] sm:transform -translate-x-1/2 -translate-y-1/2"
       >
         <input
-          class="w-[500px] p-[10px]"
+          class="w-[50%] sm:w-[500px] p-[10px]"
           type="text"
           id="email"
           name="email"
           placeholder="Email adress"
         />
-        <span class="py-[15px] px-[22px] text-lg bg-sky-500">
+        <span
+          class="py-[10px] px-[10px] sm:py-[15px] sm:px-[22px] text-lg bg-sky-500"
+        >
           <button type="button">I WANT!</button>
         </span>
       </div>
@@ -194,7 +296,9 @@
     <!-- DIFFRENT COLOR SECTION -->
     <div class="block">
       <div class="lg:container mx-auto">
-        <div class="grid grid-cols-3 gap-4 m-[100px]">
+        <div
+          class="grid grid-cols-1 text-center md:grid-cols-3 gap-4 m-[100px]"
+        >
           <div class="flex flex-col">
             <div class="bg-sky-300 p-[50px]">
               <h1 class="text-[20px] font-[500]">Southern countries</h1>
@@ -246,24 +350,24 @@
     <!-- second last section --- -->
     <div class="block bg-[#6721B5]">
       <div class="lg:container mx-auto">
-        
-        <div class="grid grid-cols-2 gap-4 m-[100px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 m-[100px]">
           <div class="w-[100%]">
             <img class="w-[100%] h-[700]" src="image/Untitled.png" alt="girl" />
           </div>
 
           <div class="flex flex-col text-[white]">
             <h2 class="text-[30px] mt-[60px]">Lets talk</h2>
-            <h1 class="text-[50px]  mt-[30px] font-[700]">Have any project?</h1>
+            <h1 class="text-[30px] sm:text-[50px] mt-[30px] font-[700]">
+              Have any project?
+            </h1>
             <p class="text-[20px] mt-[20px]">
-              Feugiat scelerisque varius morbi enim nunc faucibus a.<br />
-              Semper risus in hendrerit gravida rutrum quisque.
+              Feugiat scelerisque varius morbi enim nunc faucibus a. Semper
+              risus in hendrerit gravida rutrum quisque.
             </p>
 
-            <div class="grid-col-2  mt-[30px]">
-
+            <div class="grid-col-2 md:grid-col-2 mt-[30px]">
               <input
-                class="w-[200px] p-[10px] border-2 rounded bg-[#6721B5] "
+                class="w-[49%] p-[10px] border-2 rounded bg-[#6721B5]"
                 type="text"
                 id="name"
                 name="name"
@@ -271,7 +375,7 @@
               />
 
               <input
-                class="w-[200px] p-[10px] border-2 rounded bg-[#6721B5]"
+                class="w-[49%] p-[10px] border-2 rounded bg-[#6721B5]"
                 type="text"
                 id="e-mail"
                 name="e-mail"
@@ -279,110 +383,111 @@
               />
 
               <input
-                class="w-[200px] p-[10px] border-2 rounded bg-[#6721B5] mt-[30px]"
+                class="w-[49%] p-[10px] border-2 rounded bg-[#6721B5] mt-[30px]"
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Phone-Number"
               />
               <input
-                class="w-[200px] p-[10px] border-2 rounded bg-[#6721B5]"
+                class="w-[49%] p-[10px] border-2 rounded bg-[#6721B5]"
                 type="text"
                 id="e-mail"
                 name="e-mail"
                 placeholder="Your-Website"
               />
-              
-                <input
-                  class=" w-[200px] p-[10px] border-2 rounded bg-[#6721B5] mt-[30px]"
-                  type="text"
-                  id="website"
-                  name="website"
-                  placeholder="Your-Website"
-                />
-             
+
+              <input
+                class="w-[98%] sm:w-[98%] h-[100px] p-[10px] border-2 rounded bg-[#6721B5] mt-[30px]"
+                type="text"
+                id="website"
+                name="website"
+                placeholder="Your-Website"
+              />
             </div>
-<div class=" flex gap-4 ">
-    <a href="#ablock"
-      ><h6 class=" bg-[#FF7425] py-[3px] px-[40px] text-[20px] rounded border-2 mt-[20px]">
-        Submit
-      </h6></a
-    >
+            <div class="flex gap-4">
+              <a href="#ablock"
+                ><h6
+                  class="bg-[#FF7425] py-[3px] px-[40px] text-[20px] rounded border-2 mt-[20px]"
+                >
+                  Submit
+                </h6></a
+              >
 
-    
-    <div class="text-[30px] mt-[20px] ">  <i class="fas fa-phone-alt"></i></div>
-   <h1 class="text-[30px] mt-[20px]">(1840 3849 3930)</h1>
- 
-</div>
-
+              <div class="text-[30px] sm:text-[30px] mt-[20px]">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h1
+                class="text-[14px] md:text-[25px] sm:mt-[20px] mt-[30px] font-[700]"
+              >
+                (1840 3849 3930)
+              </h1>
+            </div>
           </div>
         </div>
       </div>
     </div>
-<!-- <footer></footer> -->
-<div class="block bg-[#1D1C2D] ]">
-  <div class="lg:container mx-auto">
+    <!-- <footer></footer> -->
+    <div class="block bg-[#1D1C2D] ]">
+      <div class="lg:container mx-auto">
+        <div
+          class="  md:flex  text-[white] gap:5 md:gap-20 pb-[50px] pt-[50px] text-center md:justify-between"
+        >
+          <div class="flex flex-col items-center">
+            <h1 class="text-[30px]">Logo</h1>
+            <h3 class="mt-[20px]">You will get weekly update on Email</h3>
+            <input
+              class="border-2 rounded ] mt-[30px] p-[10px] w-[50%] sm:w-[100%]"
+              type="text"
+              id="e-mail"
+              name="e-mail"
+              placeholder="Email"
+            />
+            <a href="#ablock"
+              ><h6
+                class="text-center text-[20px] rounded bg-[#FF7425] w-[100px] mt-[20px]"
+              >
+                Submit
+              </h6></a
+            >
+            <div class="flex mt-[30px] gap-12">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-pinterest-p"></i>
+            </div>
+          </div>
 
-<div class="flex text-[white] gap-20 pb-[50px] pt-[50px] justify-between " >
+          <div class="flex flex-col mt-[20px]">
+            <h1 class="text-[30px]">Services</h1>
+            <h3 class="mt-[20px]">Digital Marketing</h3>
+            <h3 class="mt-[10px]">Digital Marketing</h3>
+            <h3 class="mt-[10px]">Digital Marketing</h3>
+            <h3 class="mt-[10px]">Digital Marketing</h3>
+          </div>
 
-  <div class="flex flex-col ">
-    <h1 class="text-[30px]">Logo</h1>
-    <h3 class="mt-[20px]">You will get weekly update on Email</h3>
-  <input
-  class="  border-2 rounded  ] mt-[30px] p-[10px]"
-  type="text"
-  id="e-mail"
-  name="e-mail"
-  placeholder="Email"
-/>
-<a href="#ablock"
-      ><h6 class="text-center  text-[20px] rounded bg-[#FF7425] w-[100px] mt-[20px]">
-        Submit
-      </h6></a
-    >
-    <div class="flex mt-[30px] gap-12">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin-in"></i>
-      <i class="fab fa-pinterest-p"></i>
+          <div class="flex flex-col mt-[20px]">
+            <h1 class="text-[30px]">Resources</h1>
+            <h3 class="mt-[20px]">About</h3>
+            <h3 class="mt-[10px]">Portfolio Two Column</h3>
+            <h3 class="mt-[10px]">Portfolio Two Column</h3>
+            <h3 class="mt-[10px]">Blog</h3>
+            <h3 class="mt-[10px]">contact</h3>
+          </div>
+
+          <div class="flex flex-col mt-[20px]">
+            <h1 class="text-[30px]">Information</h1>
+            <h3 class="mt-[20px]">
+              Ta-134/A, Gulshan Badda <br />Link Rd, Dhaka
+            </h3>
+            <h3 class="mt-[10px]">(+880)155 69569 365</h3>
+            <h3 class="mt-[10px]">support@rstheme.com</h3>
+            <h3 class="mt-[10px]">infoname@gmail.com</h3>
+            <h3 class="mt-[10px]">contact</h3>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-
-  <div class="flex flex-col mt-[20px]  ">
-    <h1 class="text-[30px]">Services</h1>
-    <h3 class="mt-[20px]">Digital Marketing</h3>
-    <h3 class="mt-[10px]">Digital Marketing</h3>
-    <h3 class="mt-[10px]">Digital Marketing</h3>
-    <h3 class="mt-[10px]">Digital Marketing</h3>
-  </div>
-  
-  <div class="flex flex-col mt-[20px]  ">
-    <h1 class="text-[30px]">Resources</h1>
-    <h3 class="mt-[20px]">About</h3>
-    <h3 class="mt-[10px]">Portfolio Two Column</h3>
-    <h3 class="mt-[10px]">Portfolio Two Column</h3>
-    <h3 class="mt-[10px]">Blog</h3>
-    <h3 class="mt-[10px]">contact</h3>
-  </div>
-
-  <div class="flex flex-col mt-[20px]  ">
-    <h1 class="text-[30px]">Information</h1>
-    <h3 class="mt-[20px]">Ta-134/A, Gulshan Badda <br>Link Rd, Dhaka </h3>
-    <h3 class="mt-[10px]">(+880)155 69569 365</h3>
-    <h3 class="mt-[10px]">support@rstheme.com</h3>
-    <h3 class="mt-[10px]">infoname@gmail.com</h3>
-    <h3 class="mt-[10px]">contact</h3>
-  </div>
-
- 
-</div>
-  </div>
-</div>
-
-
-
   </body>
 </html>
